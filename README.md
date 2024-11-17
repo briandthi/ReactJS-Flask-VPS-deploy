@@ -244,3 +244,4 @@ bash deploy.sh
 ## More
 
 - Use github action to automatocally update your app
+- Use Gunicorn for Flask deployment
