@@ -80,20 +80,23 @@ pip install -r requirements.txt
 deactivate
 ```
 
-Back to your root.
-```
-cd ..
-```
 ### Create your environment variables
 Create `.env` file.
 ```bash
 touch .env
 ```
+
 Add necessary variables to `.env`.
 ```bash
 echo "FLASK_APP=app.py" >> .env
 echo "FLASK_ENV=production" >> .env
 ```
+
+Back to your root.
+```
+cd ..
+```
+
 ## 3. Configure your React App
 
 Install your dependencies
