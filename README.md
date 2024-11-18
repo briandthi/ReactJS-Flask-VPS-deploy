@@ -1,4 +1,16 @@
 # ReactJS-Flask-app-VPS-deploy
+
+## Summary
+0. Prerequisite
+1. Prepare your VPS
+2. Clone your projects
+3. Configure your Flask app
+4. Configure your React App
+5. Configure background deployment with pm2
+6. (If you have a domain) Access the application from your domain
+7. Deploy
+8. More
+
 ## 0. Prerequisite 
 
 You should have 2 projects:
@@ -97,7 +109,7 @@ Back to your root.
 cd ..
 ```
 
-## 3. Configure your React App
+## 4. Configure your React App
 
 Install your dependencies
 ```bash
@@ -124,7 +136,7 @@ Back to the root.
 cd ..
 ```
 
-## 3. Configure background deployment with pm2
+## 5. Configure background deployment with pm2
 
 Install `pm2`.
 ```bash
@@ -151,7 +163,7 @@ pm2 save
 pm2 startup
 ```
 
-## 4. (If you have a domain) Access the application from your domain
+## 6. (If you have a domain) Access the application from your domain
 
 ### Subdomain creation
 
@@ -237,14 +249,14 @@ Restart to apply modifications.
 sudo systemctl restart nginx
 ```
 
-## Deploy
+## 7. Deploy
 
 Just launch your `deploy.sh` file
 ```
 bash deploy.sh
 ```
 
-## More
+## 8. More
 
 - Use github action to automatocally update your app
 - Use Gunicorn or waitress for Flask deployment
